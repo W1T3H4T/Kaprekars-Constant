@@ -31,7 +31,7 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
   add_compile_options("-std=c++17")
 elseif (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
   # using GCC
-  add_compile_options("-c++20")
+  add_compile_options("-std=c++17")
   link_libraries(stdc++fs)
 elseif (CMAKE_CXX_COMPILER_ID STREQUAL "Intel")
   # using Intel C++
